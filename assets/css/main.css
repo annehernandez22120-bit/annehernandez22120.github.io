@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 221, 227);
+    overflow-x: hidden;
+    font-family: "Sansita", sans-serif;
+    
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 1px;
+  border: 6px dotted rgb(159, 57, 120);
+  border-radius: 1px;
+  pointer-events: none;
+}
+header{
+    margin: 1rem;
+    border: 2rem;
+}
+h1{
+    font-family: "Oleo Script", cursive;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0, 0.2);
+    color: rgb(159, 57, 120);
+    text-align: center;
+    color: rgb(159, 57, 120);
+    animation: aparecer 2s ease-in-out;
+    text-align: center;
+    animation: latido 5s infinite;
+}
+h1 {
+
+  position: relative;
+  width: fit-content;
+  margin: 35px auto;
+  padding: 25px 40px;
+  background: #ffffff;
+  border-radius: 70px;
+  text-align: center;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  width: 40px;
+  height: 60px;
+  background: hsl(340, 100%, 99%);
+  border-radius: 50%;
+}
+
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  width: 40px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+@keyframes latido {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+h2{
+    margin: 1rem;
+    color: rgb(159, 57, 120);
+    margin-top: 0;
+    text-align: center;
+    text-decoration:underline 0.09rem;
+    animation: blink 2s infinite;
+    text-align: center;
+    text-decoration:underline 0.09rem;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100%{opacity: 0.9;}
+}
+li{
+    color: rgb(195, 58, 131);
+    margin: 10px;
+}
+a{
+    color: rgb(190, 25, 127);
+    
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0, 0.2);
+    
+}
+
+
+nav a {
+  text-decoration: none;
+  padding: 0px 0.5rem;
+  border: rgb(159, 57, 120);
+  border-radius: 10px;
+  color: rgb(126, 73, 100);
+  margin: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgb(159, 57, 120);
+  color: aliceblue;
+  transform: scale(1.1);
+}
+
+.menu {
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0.1px 0;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu li a {
+  display: inline-block;
+  padding: 0.1px 5px;
+
+  background-color: white;
+  color: rgb(159, 57, 120);
+
+  border-radius: 22px;
+  border: 1px solid rgb(159, 57, 120);
+
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  background-color: rgb(159, 57, 120);
+  color: white;
+   box-shadow: 0 0 10px rgb(86, 19, 63),
+    0 0 20px rgb(255, 36, 167);
+}
+.header-top {
+  display:flex;
+  align-items: center;   
+  justify-content: center;
+  gap: 15px;             
+  margin: 15px;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;   
+  object-fit: cover;
+  border: 3px solid rgb(159, 57, 120);
+  animation: latido 5s infinite;
+}
+@keyframes latido {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+  
+}
+footer{
+    color: #51103f;
+    text-align: center;
+    margin: 1.2rem;
+    padding: 0.1rem;
+
+}
