@@ -41,7 +41,7 @@ h1 {
   position: relative;
   width: fit-content;
   margin: 35px auto;
-  padding: 25px 40px;
+  padding: 20px 40px;
   background: #ffffff;
   border-radius: 70px;
   text-align: center;
@@ -164,7 +164,7 @@ nav a:hover {
   align-items: center;   
   justify-content: center;
   gap: 15px;             
-  margin: 15px;
+  margin: 25px;
 }
 
 .foto {
